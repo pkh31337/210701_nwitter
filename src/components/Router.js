@@ -5,7 +5,7 @@ import Auth from "routes/Auth"
 const AppRouter = ({ isLoggedIn }) => {
   return (
     <Router>
-      <switch>
+      <Switch>
         {isLoggedIn ? (
           <>
             <Route exact path="/">
@@ -17,7 +17,7 @@ const AppRouter = ({ isLoggedIn }) => {
             <Auth />
           </Route>
         )}
-      </switch>
+      </Switch>
     </Router>
   );
 };
